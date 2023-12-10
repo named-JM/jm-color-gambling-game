@@ -18,7 +18,7 @@ class _ColorGambleGameState extends State<ColorGambleGame> {
     Colors.deepPurple.shade300,
     Color.fromARGB(255, 255, 238, 0),
     Color.fromARGB(255, 33, 29, 29),
-    Colors.orange,
+    Colors.pink,
     const Color.fromARGB(255, 98, 176, 39),
   ];
 
