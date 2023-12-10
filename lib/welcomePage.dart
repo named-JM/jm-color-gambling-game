@@ -7,31 +7,31 @@ class WelcomeScreen extends StatefulWidget {
   const WelcomeScreen({Key? key}) : super(key: key);
 
   @override
-  _WelcomeScreenState createState() => _WelcomeScreenState();
+  WelcomeScreenState createState() => WelcomeScreenState();
 }
 
-class _WelcomeScreenState extends State<WelcomeScreen>
+class WelcomeScreenState extends State<WelcomeScreen>
     with SingleTickerProviderStateMixin {
-  late AnimationController _controller;
-  late Animation<Color?> _backgroundAnimation;
+  late AnimationController controller;
+  late Animation<Color?> backgroundAnimation;
 
   @override
   void initState() {
     super.initState();
 
-    _controller = AnimationController(
+    controller = AnimationController(
       vsync: this,
       duration: Duration(seconds: 5), // Adjust the duration as needed
     );
 
-    _backgroundAnimation = _controller.drive(
+    backgroundAnimation = controller.drive(
       ColorTween(
         begin: Color.fromARGB(255, 134, 122, 222),
         end: Color.fromARGB(255, 231, 50, 4),
       ),
     );
 
-    _controller.repeat(
+    controller.repeat(
         reverse:
             true); // Reversing the animation to smoothly transition back and forth
 
@@ -41,7 +41,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
 
   @override
   void dispose() {
-    _controller.dispose();
+    controller.dispose();
     super.dispose();
   }
 
@@ -49,7 +49,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
   Widget build(BuildContext context) {
     return Scaffold(
       body: AnimatedBuilder(
-        animation: _backgroundAnimation,
+        animation: backgroundAnimation,
         builder: (context, child) {
           return Container(
             decoration: BoxDecoration(
@@ -57,7 +57,7 @@ class _WelcomeScreenState extends State<WelcomeScreen>
                 begin: Alignment.topLeft,
                 end: Alignment.bottomRight,
                 colors: [
-                  _backgroundAnimation.value!,
+                  backgroundAnimation.value!,
                   Color.fromARGB(
                       255, 157, 0, 255), // You can set another color if needed
                 ],
