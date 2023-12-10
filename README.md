@@ -1,16 +1,9 @@
-# cosc30_midterm_caguco_set4
+# Set 4 Game made by JM
 
-A new Flutter project.
+This is Color Gambling Game I made for my midterm practical exam in FLutter. I posted this on my Github to practice and to adapt and make used to it. 
+
 
 ## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+	
+I made few pages. Splash Art, Login page, Register Page, Welcome Home Page, and the Game Page.	
+This is simple Game and it still doesnt have **database**, so my Login page and Register page is just made from condition and just a simple simulation. 
