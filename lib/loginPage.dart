@@ -37,7 +37,7 @@ class LoginPageState extends State<LoginPage> {
               decoration: BoxDecoration(
                   image: DecorationImage(
                 image: AssetImage(
-                  'assets/images/play.png',
+                  'assets/images/coin.png',
                 ),
                 fit: BoxFit.cover,
               )),
