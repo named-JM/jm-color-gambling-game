@@ -11,6 +11,7 @@ class ColorGame extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+        debugShowCheckedModeBanner: false,
         //----> My SplashScreen Section <----//
         home: SplashScreen());
   }

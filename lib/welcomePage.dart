@@ -36,7 +36,7 @@ class WelcomeScreenState extends State<WelcomeScreen>
             true); // Reversing the animation to smoothly transition back and forth
 
     // Uncomment the line below if you want to start the animation immediately when the screen is loaded
-    // _controller.forward();
+    controller.forward();
   }
 
   @override
